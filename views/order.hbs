@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    {{> head }}
+    {{> script }}
+</head>
+<body>
+{{> header}}
+<div class="mainbody">
+    <h2>Заказать столик</h2>
+    <form name="date">
+        <p class="order">
+            <label for="date">Выберите дату:</label>
+            <input type="date" name="calendar" id="calendar" onchange="handlerDate(event)">
+        </p>
+    </form>
+</div>
+{{> footer}}
+</body>
+</html>
